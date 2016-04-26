@@ -17,10 +17,10 @@ import static org.junit.Assert.assertEquals
 class GroovyTestConfigurationTest {
 
   @Autowired
-  String foo
+  GroovyTestBean groovyTestBean
 
   @Test
   void shouldWork() throws Exception {
-    assertEquals('foo', 'bar', foo)
+    assertEquals('groovy-test-bean', 'test-value',groovyTestBean.value)
   }
 }

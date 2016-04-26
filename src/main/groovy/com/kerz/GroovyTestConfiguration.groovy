@@ -10,10 +10,10 @@ import javax.validation.constraints.NotNull
 @ConfigurationProperties(prefix = 'pre')
 class GroovyTestConfiguration {
   @NotNull
-  String foo
+  String testBeanValue
 
   @Bean
-  String foo() {
-    foo
+  GroovyTestBean groovyTestBean() {
+    new GroovyTestBean(testBeanValue)
   }
 }

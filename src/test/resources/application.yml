@@ -1,6 +1,2 @@
-logging:
-  level:
-    org.springframework: DEBUG
-
 pre:
-  foo: bar
+  testBeanValue: test-value
